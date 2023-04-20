@@ -17,18 +17,13 @@
 //.tag name;
 /************* MAIN FUNCTION**************/
 int main(){
-    printf("Please input your 10 numbers into the array \n");
+    int arr[5][2] = {{0,0},{1,2},{2,4},{3,6},{4,8}};
+    int i, j;
 
-    int userNum[10];
-    // int dataTypeSize = sizeof(userNum) / sizeof(userNum[0]);
-    int i = 0;
-    for(i=0;i<10;i++) {
-        printf("Your number %d :", i);
-        scanf("%d", &userNum[i]);
+    for (i=0; i<5; i++){
+        for (j=0;j<2;j++){
+            printf("arr[%d][%d] = %d\n", i, j, arr[i][j]);
+        }
     }
-    printf("\nYour array is : \n\n");
-    for(i=0;i<10;i++) {
-        printf("userNum[%d] is %d \n", i, userNum[i]);
-    }
-return 0;
-}
+    printf("Val at arr[2][1] is %d\n",arr[2][1]);
+return 0;}  

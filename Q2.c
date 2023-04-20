@@ -17,18 +17,5 @@
 //.tag name;
 /************* MAIN FUNCTION**************/
 int main(){
-    printf("Please input your 10 numbers into the array \n");
-
-    int userNum[10];
-    // int dataTypeSize = sizeof(userNum) / sizeof(userNum[0]);
-    int i = 0;
-    for(i=0;i<10;i++) {
-        printf("Your number %d :", i);
-        scanf("%d", &userNum[i]);
-    }
-    printf("\nYour array is : \n\n");
-    for(i=0;i<10;i++) {
-        printf("userNum[%d] is %d \n", i, userNum[i]);
-    }
-return 0;
-}
+ 
+return 0;}
