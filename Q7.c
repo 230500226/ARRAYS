@@ -17,24 +17,13 @@
 //.tag name;
 /************* MAIN FUNCTION**************/
 int main(){
-    int sampleArr[10]={15,24,15,69,85,14,25,123,4,498};
-    int odd[10]={}, even[10]={};
-    int oddC=0, evenC=0; //counters
-    for (int i=0; i<10; i++){
-        if (sampleArr[i]%2==1){
-            odd[oddC]=sampleArr[i];
-            oddC ++;
-        } else {
-            even[evenC]=sampleArr[i];
-            evenC ++;
+    int sampleArr[10] = {0,1,3,3,4,5,6,7,5,9};
+    int max=sampleArr[0];
+    for (int i = 0; i < 10; i++){
+        if (sampleArr[i]>max){
+            max = sampleArr[i];
         }
     }
-
-    for (int i=0; i<(sizeof(odd)/sizeof(odd[0])); i++){
-        printf("odd[%d]=%d\n",i,odd[i]);
-    }
-    for (int i=0; i<(sizeof(even)/sizeof(even[0])); i++){
-        printf("even[%d]=%d\n",i,even[i]);
-    }
-
-return 0;}
+    printf("The max value in sampleArr is %d\n",max);
+return 0;
+}
